@@ -8,8 +8,8 @@ const sampleYoshi = yoshi_sampler(100);
 const breakpointColumnsObj = {
     default: 4,
     1400: 3,
-    800: 2,
-    500: 1
+    1000: 2,
+    700: 1
 }
 
 const Album = () => {
