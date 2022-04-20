@@ -5,7 +5,7 @@ import Masonry from 'react-masonry-css'
 
 // const sampleYoshi = yoshi_sampler(1)
 
-import * as response from '../data/response.json'
+import * as response from './data/response.json'
 
 const breakpointColumnsObj = {
   default: 4,
