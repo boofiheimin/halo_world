@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import Image from 'next/image'
 import Flag from 'react-world-flags'
 import { motion } from 'framer-motion'
 
@@ -15,8 +13,7 @@ interface Response {
 }
 
 const Card = ({ response }: { response: Response }) => {
-  const [paddingTop, setPaddingTop] = useState('0')
-  const { countryCode, city, country, name, imgSrc } = response
+  const { countryCode, city, country, name, imgSrc, message } = response
   return (
     <motion.div whileHover={{ scale: 1.05 }}>
       <div className="relative min-h-0" style={{ width: IMG_WIDTH }}>
@@ -29,22 +26,7 @@ const Card = ({ response }: { response: Response }) => {
           </div>
         )}
         {imgSrc ? (
-          <div className="relative" style={{ paddingTop }}>
-            <Image
-              src={imgSrc}
-              alt="test-pic"
-              layout="fill"
-              objectFit="contain"
-              onLoad={({ target }) => {
-                const { naturalWidth, naturalHeight } =
-                  target as HTMLImageElement
-                setPaddingTop(
-                  `calc(100% / (${naturalWidth} / ${naturalHeight})`
-                )
-              }}
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          <img src={imgSrc} alt="test-pic" />
         ) : (
           <div className="h-8 bg-gray-800" />
         )}
@@ -53,7 +35,7 @@ const Card = ({ response }: { response: Response }) => {
             className="bg-gray-800 p-2 text-right"
             style={{ width: IMG_WIDTH }}
           >
-            <div className="text-white">Happy Birthday Kanatan 💫</div>
+            <div className="text-white">{message}</div>
             <div className="italic text-white">{`- ${name}`}</div>
             <div className="text-sm italic text-white">
               {`${city ? `${city}, ` : ''}${country}`}

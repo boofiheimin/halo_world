@@ -1,4 +1,4 @@
-[
+export const response = [
   {
     "name": "Yukikaze Kai",
     "countryCode": "PHL",
