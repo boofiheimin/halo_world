@@ -1,24 +1,41 @@
-import Link from 'next/link'
+import Card from '../components/Card'
+import Masonry from 'react-masonry-css'
+
+// import { yoshi_sampler } from '../helper/sampler'
+
+// const sampleYoshi = yoshi_sampler(1)
+
+import * as response from '../data/response.json'
+
+const breakpointColumnsObj = {
+  default: 4,
+  1400: 3,
+  1000: 2,
+  700: 1,
+}
 
 export default function Home() {
   return (
-    <div className='h-100 w-100 flex justify-center items-center'>
-      <div>
-        <div className='font-bold text-white text-3xl drop-shadow-lg my-4'>
-          Halo-world Demo 💫
+    <div className="flex flex-col items-center p-2 pt-10">
+      <div className="mb-8 w-full max-w-xl">
+        <div className="p-2 text-center text-3xl font-bold text-white drop-shadow-xl">
+          HALO WORLD PROJECT 💫
         </div>
-        <div className='bg-white rounded-xl p-4 flex flex-col justify-center drop-shadow-md'>
-          <Link href="/instruction">
-            <button className='mb-2 bg-blue-300 p-2 rounded-2xl text-white font-bold'>
-              Instruction
-            </button>
-          </Link>
-          <Link href="/album">
-            <button className=' bg-blue-300 p-2 rounded-2xl text-white font-bold'>
-              Album
-            </button>
-          </Link>
+        <div className="text-center italic text-white">
+          collected from heimin all over the world to celebrate Amane Kanata
+          Birthday!
         </div>
+      </div>
+      <div className="flex h-full w-full justify-center">
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
+        >
+          {response.map((response, i) => (
+            <Card response={response} key={`${i}_${response.name}`} />
+          ))}
+        </Masonry>
       </div>
     </div>
   )

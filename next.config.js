@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-      domains: ['i.pinimg.com', "cdn-eu.anidb.net" ]
+      domains: ['drive.google.com']
   },
   reactStrictMode: true,
 }
