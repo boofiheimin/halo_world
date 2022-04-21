@@ -25,9 +25,9 @@ export default function Home() {
           alt="halo-world"
         />
         <div className="box mb-4 flex items-center rounded-md bg-blue-500 bg-opacity-50 p-6 text-lg text-white">
-          <div className="flex items-center pl-4">
+          <div className="intro flex items-center pl-4">
             <img src="kanata_slep.webp" alt="kanata-slep" width={300} />
-            <p className="mb-4 pl-6">
+            <p className="mb-4 lg:pl-6">
               <p className="mb-4 font-bold">Hei!</p>
               <p className="mb-4">First of all, Happy Birthday Kanatan!</p>
               <p className="mb-4">
@@ -56,8 +56,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="box mb-4 flex items-center rounded-md bg-blue-500 bg-opacity-50 p-4 text-lg text-white">
-          <div className="flex">
+        <div className="intro box mb-4 flex items-center rounded-md bg-blue-500 bg-opacity-50 p-4 text-lg text-white">
+          <div className="mb-4 flex items-center lg:mb-0">
             <p>
               Along with that project,
               <span className="font-bold">
@@ -76,7 +76,7 @@ export default function Home() {
               </a>
             </p>
           </div>
-          <div className="h-full w-40">
+          <div className="flex h-full w-40 items-center justify-center">
             <Crane />
           </div>
         </div>
