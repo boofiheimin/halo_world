@@ -9,7 +9,11 @@ body > div:first-child,
 div#__next,
 div#__next > div {
     height: 100%;
-    background-color: skyblue;
+    /* background-color: #BFDCFF; */
+    background-image: url("/pptile.webp");
+    background-repeat: repeat;
+    /* background-attachment: fixed; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .masonry-grid {
@@ -26,6 +30,39 @@ div#__next > div {
 
 /* Style your items */
 .masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
   margin-bottom: 30px;
+}
+
+.halo_body {
+  max-width: 1245px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .halo_body {
+    max-width: 930px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .halo_body {
+    max-width: 615px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .halo_body {
+    max-width: 330px;
+  }
+}
+
+.halo {
+  width: 400px;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.flag_placeholder {
+  height: calc(30px + 0.5rem);
 }
