@@ -31,15 +31,17 @@ export default function Home() {
               <p className="mb-4 font-bold">Hei!</p>
               <p className="mb-4">First of all, Happy Birthday Kanatan!</p>
               <p className="mb-4">
-                Recently, us overseas Heimin have been working on a project for
-                Kanata's birthday, and it's called the Halo World Project!
+                {`Recently, us overseas Heimin have been working on a project for
+                Kanata's birthday, and it's called the Halo World Project!`}
               </p>
               <p className="mb-4">
+                {`
                 With this project, we aimed to show how much all the Heimin from
                 around the world love Kanata by sending a picture representative
                 of where they live along with Kanata's merch! Each post also has
                 a birthday message to Kanata, so that we could show our
                 appreciation no matter where any of us live!
+                  `}
               </p>
               <p>
                 {`
