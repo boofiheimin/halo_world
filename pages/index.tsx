@@ -39,7 +39,7 @@ export default function Home() {
                 With this project, we aimed to show how much all the Heimin from
                 around the world love Kanata by sending a picture representative
                 of where they live along with Kanata's merch! Each post also has
-                a birthday message to Kanata, so that we could show our
+                a birthday message for Kanata, so that we could show our
                 appreciation no matter where any of us live!
                   `}
               </p>
@@ -59,9 +59,9 @@ export default function Home() {
         <div className="intro box mb-4 flex items-center rounded-md bg-blue-500 bg-opacity-50 p-4 text-lg text-white">
           <div className="mb-4 flex items-center lg:mb-0">
             <p>
-              Along with that project,
+              {`Along with that project, `}
               <span className="font-bold">
-                we also did a collaboration campaign with MASS!
+                {`we also did a collaboration campaign with MASS!`}
               </span>{' '}
               With this, Heimin from around the world also folded together paper
               cranes so that we could get to 1000 to help Kanata get better

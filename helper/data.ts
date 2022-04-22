@@ -995,8 +995,8 @@ export const response = [
     "name": "Skullyboy",
     "countryCode": "NOR",
     "country": "Norway",
-    "city": "Happy birthday Kanatan! Hope you have a wonderful day and hope you can use this year of your life to get closer to your goals and dreams!",
-    "message": "Happy birthday Kanatan! Hope you have a wonderful day!",
+    "city": "",
+    "message": "Happy birthday Kanatan! Hope you have a wonderful day and hope you can use this year of your life to get closer to your goals and dreams!",
     "imgSrc": ""
   },
   {
@@ -1094,5 +1094,253 @@ export const response = [
     "city": "",
     "message": "kanata 생일 축하해\nkanata가 하는 모든 일이 잘 풀려나가기를 바랄께.\n언제나 행복한 나날 보내기를. 항상 고마워.\nkanataお誕生日おめでとう\nkanataがするすべてのことがうまくいくことを願うよ.\nいつも幸せな日々を送るように。 いつもありがとう。",
     "imgSrc": "https://drive.google.com/uc?export=view&id=1JqldKTbB_HKob3bzV607wmvNOUNRu8Zt"
+  },
+  {
+    "name": "Erik",
+    "countryCode": "GBR",
+    "country": "United Kingdom",
+    "city": "",
+    "message": "Happy birthday, Kanatan! So glad you're back to streaming and can't wait to see what exciting things await you in the future! 誕生日 ✨",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1Gc-O2zyM-WN1WD8r6YOYoywo33TCzd0W"
+  },
+  {
+    "name": "MANGOPIE",
+    "countryCode": "KOR",
+    "country": "South Korea",
+    "city": "",
+    "message": "私は日本語も下手で、文章も下手ですが、最近心配なことに耐えて戻ってきてくれてありがとうございます。お誕生日本当におめでとうございます！ これから楽しいことばかりありますように！",
+    "imgSrc": ""
+  },
+  {
+    "name": "Jazzinghen",
+    "countryCode": "ITA",
+    "country": "Italy",
+    "city": "Trento",
+    "message": "Thank you for keeping me up with your irony during two dark years. Happy Birthday PPTenshi!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1pFieshIRS80QfF9vdj3kuVE6jyXXZ0m3"
+  },
+  {
+    "name": "cushing",
+    "countryCode": "KOR",
+    "country": "South Korea",
+    "city": "",
+    "message": "奏多のお誕生日おめでとうございます。 これからは良いことばかりあることを祈ります。",
+    "imgSrc": ""
+  },
+  {
+    "name": "otsupi",
+    "countryCode": "PHL",
+    "country": "Philippines",
+    "city": "Metro Manila",
+    "message": "Thank you for bringing happiness to so many heimin around the world!!\nかなたん、お誕生日おめでとう！ そして、おかえり！\nずっと応援しています！！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1hx0Peahsr3LUtKQWdaa4Ty-n57ggqN5B"
+  },
+  {
+    "name": "Haseo",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "",
+    "message": "Happy Birthday!! I am happy for your recovery! Keep on soaring high PP Tenshi!!!",
+    "imgSrc": ""
+  },
+  {
+    "name": "ぱちょり",
+    "countryCode": "JPN",
+    "country": "Japan",
+    "city": "",
+    "message": "お誕生日おめでとう🎉\nずっと大好きだよ💫\nこれからも色んなかなたんを見せてね！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1WbAf5nK3WU7ttbbjNeKLM9Ks89qVsChc"
+  },
+  {
+    "name": "伊久新之助",
+    "countryCode": "JPN",
+    "country": "Japan",
+    "city": "岐阜県各務原市",
+    "message": "大好きなかなたん、お誕生日おめでとう！ホロライブで3回目のお誕生日会に参加することができて、本当に本当に嬉しいよ！\nかなたんのファンを思いやる気持ち、周りの人を幸せにしようとする行動、休止中にもたくさん感じたよ。\nその姿は、まさに天使。\n今年も良い1年に、一緒にしようね！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1XyWffECjm9cETLAJBjKACdv7nrfUEzb7"
+  },
+  {
+    "name": "ボリサムSam",
+    "countryCode": "AUS",
+    "country": "Australia",
+    "city": "",
+    "message": "かなたん、誕生日おめでとう！！！20歳になってお酒も飲めるようになったね、未来の晩酌配信も楽しみですね～　かなたん本当にいつもありがとう、お陰で楽しい毎日で日本語も上手くなった！　今年の誕生日ライブも楽しみです！　これからも応援するよ！！",
+    "imgSrc": ""
+  },
+  {
+    "name": "Radiys",
+    "countryCode": "IDN",
+    "country": "Indonesia",
+    "city": "",
+    "message": "Happy Birthday Kanatan~!!!🎉🎉 Wish you all the best!!\nお誕生日おめでとう～！！これからも応援しています！かなたん大好き！❤💫",
+    "imgSrc": ""
+  },
+  {
+    "name": "Entity42",
+    "countryCode": "DEU",
+    "country": "Germany",
+    "city": "",
+    "message": "Happy Birthday Kanata, have a great day! 💫",
+    "imgSrc": ""
+  },
+  {
+    "name": "WallyWW",
+    "countryCode": "ARG",
+    "country": "Argentina",
+    "city": "",
+    "message": "Kanata happy birthday from an old fan. See you grow makes me smile every day. For me Kanata is the best idol. I will always cheer for you.",
+    "imgSrc": ""
+  },
+  {
+    "name": "Cheliax",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "Gainesville, Virginia",
+    "message": "Happy Birthday Kanata! You've come a long ways and I'm so proud to be a Heimin. I will forever support you no matter what!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1yIy31q8aVR5kyDJDDlZgucXywMuRyhUR"
+  },
+  {
+    "name": "シロクマ💫",
+    "countryCode": "KOR",
+    "country": "South Korea",
+    "city": "バーチャル韓国",
+    "message": "かなたんお誕生日おめでとう-!!😁 いつまでもずっと応援します。本当に愛してるよ🥰",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1U8jkIwbPei58VifQriI0cjX49iYgRCUr"
+  },
+  {
+    "name": "Netrolele",
+    "countryCode": "",
+    "country": "-",
+    "city": "",
+    "message": "Happy Birthday Kanatan!! I'm very happy you're back!　お誕生日おめでとう！！！　あなたは配信お帰りが嬉しいです！！！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1yL-b3HB3SNa03SN0NmTN3ZSrVM_7G0kU"
+  },
+  {
+    "name": "Zyn",
+    "countryCode": "PHL",
+    "country": "Philippines",
+    "city": "",
+    "message": "Hello Kanatan! As a big fan of your hardwork on vtubing and dedication to fight your sickness,I wish you a very happy and cheerful birthday!",
+    "imgSrc": ""
+  },
+  {
+    "name": "Sleepy_Sora",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "",
+    "message": "Happy birthday Kanata!! 🎉🎉🎉\nI hope you have an amazing birthday!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1575hn8kFdkJwAgNYt39z2M_djJ9zg5oL"
+  },
+  {
+    "name": "vtange",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "",
+    "message": "かなたんお誕生日おめでとうございます🎈🎁🎂🎉❗️去年の誕生日から嬉しいこともあって（1年間でもうオリ曲三曲目は凄い！）悲しいこともあって苦しいこともあって、この後の一年本当にいいこといっぱいあると祈ってます！これからもいつも配信活動やアイドル活動を応援するよ！",
+    "imgSrc": ""
+  },
+  {
+    "name": "Hiro",
+    "countryCode": "",
+    "country": "-",
+    "city": "",
+    "message": "Happy Birthday, Kanata! \nThe stars celebrate the wonder of your birth! May you continue to keep shining on stage!",
+    "imgSrc": ""
+  },
+  {
+    "name": "나만의작은학자, 私だけの小さい学者",
+    "countryCode": "KOR",
+    "country": "South Korea",
+    "city": "木浦",
+    "message": "かなたん誕生日おめでとう!いつまでもずっと好きだからずっと頑張って放送してくれ!\n私が苦しむたびにかなたんの放送を見て頑張って生きてきた だからかなたんもへい民たちを見て頑張って生きてぐれだからかなたんもへい民たちを見て頑張って生きてぐださい かなたんいつまでもずっと好きだよ!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1fbuQCTQiN0b5DmZOmJrObMQKXGs37K3K"
+  },
+  {
+    "name": "Wei",
+    "countryCode": "TWN",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "message": "Kanata, wish you a happy birthday!\nYou are amazing, and I will keep supporting you 😊\nかなたん、お誕生日おめでとうございます。\nあなたは素晴らしいです！これからも応援しています\n(deepL)",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1trBEFM1v_T-NAS4Xm7-NjI0Tb9dVHvhy"
+  },
+  {
+    "name": "宇白Chris",
+    "countryCode": "TWN",
+    "country": "Taiwan",
+    "city": "",
+    "message": "かなたんお誕生日おめでとう！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1UQr-4vCQ-apiT55nlv44TqTCMlRAdIS6"
+  },
+  {
+    "name": "JakkJakk",
+    "countryCode": "AUS",
+    "country": "Australia",
+    "city": "",
+    "message": "Happy Birthday Kanatan! I hope you enjoy your special day. Glad to have you back~ Im looking forward to the live!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1Ah5z-HPRv2n5e3LbyJ0vZKinzrF4qbe3"
+  },
+  {
+    "name": "みちみち",
+    "countryCode": "CHN",
+    "country": "China",
+    "city": "shanghai",
+    "message": "新型コロの影響で出られないので、家で撮影しました！！お誕生日おめでとう！！",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1O3pE0lEmZ_JBu8lg31_d5WDiWmTwqKNC"
+  },
+  {
+    "name": "ごさん",
+    "countryCode": "TWN",
+    "country": "Taiwan",
+    "city": "臺南市",
+    "message": "Happy birthday",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=14CTXGIHEGIC6BU8RWQ64Ha9wfQNZgY4O"
+  },
+  {
+    "name": "BrokenBicycle",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "California",
+    "message": "Happy Birthday! I love watching the streams and I hope I can for many more years.",
+    "imgSrc": ""
+  },
+  {
+    "name": "TsukimiRay",
+    "countryCode": "MYS",
+    "country": "Malaysia",
+    "city": "天界学園",
+    "message": "かなたん、お誕生日おめでとう!　いつもありがとう。かなたんのおかげで、毎日たのしかった。これからの活動楽しみです!　体は大事にしてってね。ずっと応援してくれる。\n3DLiveの時に、この美味しいピッザを食べます。",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1csLSPzNDCvRTXHIE7Lzi5oUpF-i9Qrqf"
+  },
+  {
+    "name": "The Unknown",
+    "countryCode": "MYS",
+    "country": "Malaysia",
+    "city": "",
+    "message": "Happy birthday and welcome back, Kanatan! I will continue to support you and I wish you and your family good health! かなたん，祝你生日快乐，身体健康，出入平安!",
+    "imgSrc": ""
+  },
+  {
+    "name": "tabloomoo",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "Seattle, Washington",
+    "message": "Kanata happy birthday!!!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=10niBLSmooHj1SA6HVw2uMuxkqgo5t7i6"
+  },
+  {
+    "name": "Wafuu",
+    "countryCode": "USA",
+    "country": "United States",
+    "city": "",
+    "message": "Happy Birthday! Another year, another kilogram of grip strength!",
+    "imgSrc": ""
+  },
+  {
+    "name": "Buffy BearBear",
+    "countryCode": "THA",
+    "country": "Thailand",
+    "city": "Bangkok",
+    "message": "Happy Birthday Kanatan~ Thank you for being our shining beacon in this world!",
+    "imgSrc": "https://drive.google.com/uc?export=view&id=1V8PY6EpwDEfZaOvS4rMTAqNrSQFAOt1Z"
   }
 ]
