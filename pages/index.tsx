@@ -8,9 +8,7 @@ import Card from '../components/Card'
 import { Crane } from '../components/Crane'
 
 import { response } from '../helper/data'
-import { en } from '../helper/lang'
-import { jp } from '../helper/lang'
-import { zh_TW } from '../helper/lang'
+import { en, jp, zh_TW, zh_CN } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -27,9 +25,12 @@ export default function Home() {
   const router = useRouter()
   const { locale } = router
   const t = (() => {
-    if (locale === 'ja') return jp;
-    else if (locale === 'zh-TW') return zh_TW;
-    return en;
+    switch (locale) {
+      case 'ja': return jp
+      case 'zh-TW': return zh_TW
+      case 'zh-CN': return zh_CN
+      default: return en
+    }
   })();
   const isJP = locale !== 'en' && locale !== 'zh-TW'
   const changeLanguage = (e: any) => {
@@ -73,6 +74,9 @@ export default function Home() {
           </option>
           <option className="text-white" value="zh-TW">
             zh-TW
+          </option>
+          <option className="text-white" value="zh-CN">
+            zh-CN
           </option>
         </select>
       </div>
