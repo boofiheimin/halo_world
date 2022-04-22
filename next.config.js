@@ -11,5 +11,9 @@ module.exports = {
   images: {
       domains: ['drive.google.com']
   },
+  i18n: {
+    locales: ['en', 'ja'],
+    defaultLocale: 'en'
+  },
   reactStrictMode: true,
 }

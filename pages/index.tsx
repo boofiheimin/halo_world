@@ -1,11 +1,15 @@
 import Masonry from 'react-masonry-css'
+import { divide, groupBy } from 'lodash'
+import ScrollToTop from 'react-scroll-to-top'
+import { BiUpArrow } from 'react-icons/bi'
 
 import Card from '../components/Card'
 import { Crane } from '../components/Crane'
 
 import { response } from '../helper/data'
-
-import { groupBy } from 'lodash'
+import { en } from '../helper/lang'
+import { jp } from '../helper/lang'
+import { useRouter } from 'next/router'
 
 const breakpointColumnsObj = {
   default: 4,
@@ -15,8 +19,43 @@ const breakpointColumnsObj = {
 }
 
 export default function Home() {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : jp
+  const isJP = locale !== 'en'
+  const changeLanguage = (e: any) => {
+    const locale = e.target.value
+    router.push(router.pathname, router.asPath, { locale })
+  }
   return (
-    <div className="flex flex-col items-center p-2 pt-10">
+    <div className="relative flex flex-col items-center p-2 pt-10">
+      <ScrollToTop
+        smooth
+        component={
+          <div className="flex h-full w-full items-center justify-center rounded-md bg-white ">
+            <BiUpArrow />
+          </div>
+        }
+        style={{
+          zIndex: 100,
+          bottom: '1rem',
+          right: '1rem',
+        }}
+      />
+      <div className="absolute top-4 right-4">
+        <select
+          onChange={changeLanguage}
+          defaultValue={locale}
+          className="text-shadow-sm cursor-pointer  rounded-md bg-blue-500 bg-opacity-50 p-2 text-lg tracking-wide text-white"
+        >
+          <option className="text-white" value="en">
+            EN
+          </option>
+          <option className="text-white" value="ja">
+            JP
+          </option>
+        </select>
+      </div>
       <div className="halo_body mb-8 flex w-full flex-col items-center">
         <img
           className="mb-4"
@@ -28,44 +67,30 @@ export default function Home() {
           <div className="intro flex items-center pl-4">
             <img src="kanata_slep.webp" alt="kanata-slep" width={300} />
             <p className="mb-4 lg:pl-6">
-              <p className="mb-4 font-bold">Hei!</p>
-              <p className="mb-4">First of all, Happy Birthday Kanatan!</p>
-              <p className="mb-4">
-                {`Recently, us overseas Heimin have been working on a project for
-                Kanata's birthday, and it's called the Halo World Project!`}
-              </p>
-              <p className="mb-4">
-                {`
-                With this project, we aimed to show how much all the Heimin from
-                around the world love Kanata by sending a picture representative
-                of where they live along with Kanata's merch! Each post also has
-                a birthday message for Kanata, so that we could show our
-                appreciation no matter where any of us live!
-                  `}
-              </p>
+              <p className="mb-4 font-bold">{t.p1}</p>
+              <p className="mb-4">{t.p2}</p>
+              <p className="mb-4">{t.p3}</p>
+              <p className="mb-4">{t.p4}</p>
               <p>
-                {`
-              And we want to thank all of you Heimin who have participated!
-              Thanks to all of you, we were able to get ${
-                response.length
-              } birthday messages
-              for Kanata from ${
-                Object.keys(groupBy(response, 'country')).length - 1
-              } different countries around the world!`}
+                {t.p5
+                  .replace('XXX', response.length.toString())
+                  .replace(
+                    'YYY',
+                    (
+                      Object.keys(groupBy(response, 'country')).length - 1
+                    ).toString()
+                  )}
               </p>
+              {isJP && <p className="mt-4">{(t as any).pJP}</p>}
             </p>
           </div>
         </div>
         <div className="intro box mb-4 flex items-center rounded-md bg-blue-500 bg-opacity-50 p-4 text-lg text-white">
           <div className="mb-4 flex items-center lg:mb-0">
             <p>
-              {`Along with that project, `}
-              <span className="font-bold">
-                {`we also did a collaboration campaign with MASS!`}
-              </span>{' '}
-              With this, Heimin from around the world also folded together paper
-              cranes so that we could get to 1000 to help Kanata get better
-              soon! You can see all the submissions right here!
+              {t.p6}
+              <span className="font-bold">{t.p7}</span>
+              {t.p8}
               <a
                 href="https://twitter.com/hashtag/1000CranesForKanatan"
                 target="_blank"
