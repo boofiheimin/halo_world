@@ -10,6 +10,7 @@ import { Crane } from '../components/Crane'
 import { response } from '../helper/data'
 import { en } from '../helper/lang'
 import { jp } from '../helper/lang'
+import { zh_TW } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -25,8 +26,12 @@ const OFFSET = 25
 export default function Home() {
   const router = useRouter()
   const { locale } = router
-  const t = locale === 'en' ? en : jp
-  const isJP = locale !== 'en'
+  const t = (() => {
+    if (locale === 'ja') return jp;
+    else if (locale === 'zh-TW') return zh_TW;
+    return en;
+  })();
+  const isJP = locale !== 'en' && locale !== 'zh-TW'
   const changeLanguage = (e: any) => {
     const locale = e.target.value
     router.push(router.pathname, router.asPath, { locale })
@@ -65,6 +70,9 @@ export default function Home() {
           </option>
           <option className="text-white" value="ja">
             JP
+          </option>
+          <option className="text-white" value="zh-TW">
+            zh-TW
           </option>
         </select>
       </div>
