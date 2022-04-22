@@ -35,7 +35,7 @@ export default function Home() {
     }
   })();
   const isJP = locale === 'ja'
-  const isKR = locale === 'ko'
+  // const isKR = locale === 'ko'
   const changeLanguage = (e: any) => {
     const locale = e.target.value
     router.push(router.pathname, router.asPath, { locale })
@@ -114,10 +114,8 @@ export default function Home() {
                     ).toString()
                   )}
               </p>
-              <div>
-                {isJP && <p className="mt-4">{(t as any).pJP}</p>}
-                {isKR && <p className="mt-4">{(t as any).pKR}</p>}
-              </div>
+              {isJP && <p className="mt-4">{(t as any).pJP}</p>}
+              {/* isKR && <p className="mt-4">{(t as any).pKR}</p> */}
             </p>
           </div>
         </div>
