@@ -52,7 +52,7 @@ const Card = ({ response }: { response: Response }) => {
               onLoad={({ target }) => {
                 const { naturalWidth, naturalHeight } =
                   target as HTMLImageElement
-                setImageHeight(300/(naturalWidth/naturalHeight))
+                setImageHeight(IMG_WIDTH/(naturalWidth/naturalHeight))
               }}
             />
           </div>
