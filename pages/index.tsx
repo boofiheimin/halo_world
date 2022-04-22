@@ -11,6 +11,7 @@ import { response } from '../helper/data'
 import { en, jp, zh_TW, zh_CN, kr, ph } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import Head from 'next/head'
 
 const breakpointColumnsObj = {
   default: 4,
@@ -26,14 +27,20 @@ export default function Home() {
   const { locale } = router
   const t = (() => {
     switch (locale) {
-      case 'ja': return jp
-      case 'zh-TW': return zh_TW
-      case 'zh-CN': return zh_CN
-      case 'ko': return kr
-      case 'fil': return ph
-      default: return en
+      case 'ja':
+        return jp
+      case 'zh-TW':
+        return zh_TW
+      case 'zh-CN':
+        return zh_CN
+      case 'ko':
+        return kr
+      case 'fil':
+        return ph
+      default:
+        return en
     }
-  })();
+  })()
   const isJP = locale === 'ja'
   const isKR = locale === 'ko'
   const changeLanguage = (e: any) => {
@@ -50,6 +57,9 @@ export default function Home() {
 
   return (
     <div className="relative flex flex-col items-center p-2 pt-10">
+      <Head>
+        <title>HALO WORLD</title>
+      </Head>
       <ScrollToTop
         smooth
         component={
