@@ -8,9 +8,7 @@ import Card from '../components/Card'
 import { Crane } from '../components/Crane'
 
 import { response } from '../helper/data'
-import { en } from '../helper/lang'
-import { jp } from '../helper/lang'
-import { zh_TW } from '../helper/lang'
+import { en, jp, zh_TW, zh_CN, kr, ph } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -27,11 +25,17 @@ export default function Home() {
   const router = useRouter()
   const { locale } = router
   const t = (() => {
-    if (locale === 'ja') return jp;
-    else if (locale === 'zh-TW') return zh_TW;
-    return en;
+    switch (locale) {
+      case 'ja': return jp
+      case 'zh-TW': return zh_TW
+      case 'zh-CN': return zh_CN
+      case 'ko': return kr
+      case 'fil': return ph
+      default: return en
+    }
   })();
-  const isJP = locale !== 'en' && locale !== 'zh-TW'
+  const isJP = locale === 'ja'
+  const isKR = locale === 'ko'
   const changeLanguage = (e: any) => {
     const locale = e.target.value
     router.push(router.pathname, router.asPath, { locale })
@@ -74,6 +78,15 @@ export default function Home() {
           <option className="text-white" value="zh-TW">
             zh-TW
           </option>
+          <option className="text-white" value="zh-CN">
+            zh-CN
+          </option>
+          <option className="text-white" value="ko">
+            KR
+          </option>
+          <option className="text-white" value="fil">
+            PH
+          </option>
         </select>
       </div>
       <div className="halo_body mb-8 flex w-full flex-col items-center">
@@ -102,6 +115,7 @@ export default function Home() {
                   )}
               </p>
               {isJP && <p className="mt-4">{(t as any).pJP}</p>}
+              {isKR && <p className="mt-4">{(t as any).pKR}</p>}
             </p>
           </div>
         </div>
