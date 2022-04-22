@@ -150,24 +150,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-full w-full justify-center">
-        <InfiniteScroll
-          dataLength={items.length}
-          next={fetchMore}
-          hasMore={currentIndex < response.length}
-          loader={<div>loading...</div>}
+      <InfiniteScroll
+        style={{
+          padding: '1rem',
+        }}
+        dataLength={items.length}
+        next={fetchMore}
+        hasMore={currentIndex < response.length}
+        loader={<div>loading...</div>}
+      >
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
         >
-          <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="masonry-grid"
-            columnClassName="masonry-grid_column"
-          >
-            {items.map((response, i) => (
-              <Card response={response} key={`${i}_${response.name}`} />
-            ))}
-          </Masonry>
-        </InfiniteScroll>
-      </div>
+          {items.map((response, i) => (
+            <Card response={response} key={`${i}_${response.name}`} />
+          ))}
+        </Masonry>
+      </InfiniteScroll>
     </div>
   )
 }

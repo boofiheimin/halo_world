@@ -2,18 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body,
 body > div:first-child,
 div#__next,
 div#__next > div {
-    height: 100%;
-    /* background-color: #BFDCFF; */
-    background-image: url("/pptile.webp");
-    background-repeat: repeat;
-    /* background-attachment: fixed; */
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  /* background-color: #BFDCFF; */
+  background-image: url('/pptile.webp');
+  background-repeat: repeat;
+  /* background-attachment: fixed; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .masonry-grid {
@@ -29,7 +28,8 @@ div#__next > div {
 }
 
 /* Style your items */
-.masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+.masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 30px;
 }
 
@@ -52,9 +52,9 @@ div#__next > div {
     max-width: 615px;
   }
 
-.intro {
-  flex-direction: column;
-}
+  .intro {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -68,10 +68,15 @@ div#__next > div {
 }
 
 .box {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .flag_placeholder {
   height: calc(30px + 0.5rem);
 }
 
+.image_border {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
