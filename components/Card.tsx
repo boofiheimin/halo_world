@@ -1,6 +1,7 @@
 import Flag from 'react-world-flags'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const IMG_WIDTH = 300
 
@@ -14,6 +15,7 @@ interface Response {
 }
 
 const Card = ({ response }: { response: Response }) => {
+  const [imageHeight, setImageHeight] = useState(0)
   const { countryCode, city, country, name, imgSrc, message } = response
   return (
     <motion.div
@@ -35,14 +37,25 @@ const Card = ({ response }: { response: Response }) => {
           </div>
         )}
         {imgSrc ? (
-          <Image
-            layout="responsive"
-            objectFit="cover"
-            src={imgSrc}
-            width="100%"
-            height="100%"
-            alt={`${name}'s picture`}
-          />
+          <div
+            style={{
+              position: 'relative',
+              width: IMG_WIDTH,
+              height: `${imageHeight}px`
+            }}
+          >
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={imgSrc}
+              alt={`${name}'s picture`}
+              onLoad={({ target }) => {
+                const { naturalWidth, naturalHeight } =
+                  target as HTMLImageElement
+                setImageHeight(300/(naturalWidth/naturalHeight))
+              }}
+            />
+          </div>
         ) : (
           <div className="flag_placeholder" />
         )}
