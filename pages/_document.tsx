@@ -20,7 +20,10 @@ class MyDocument extends Document {
             name="description"
             content="Tenkai Academy Discord's Amane Kanata 2022 Birthday Project"
           />
-          <meta property="og:image" content="%PUBLIC_URL%/halobanner.webp" />
+          <meta
+            property="og:image"
+            content="https://cdn.discordapp.com/attachments/782119945207021622/967019278593302578/halobanner.webp"
+          />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="og:site_name" content="PPTenshi" />
