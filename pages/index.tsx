@@ -99,6 +99,9 @@ export default function Home() {
           <option className="text-white" value="fil">
             PH
           </option>
+          <option className="text-white" value="vi">
+            VN
+          </option>
         </select>
       </div>
       <div className="halo_body mb-8 flex w-full flex-col items-center">
