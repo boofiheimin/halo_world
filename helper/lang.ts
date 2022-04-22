@@ -54,3 +54,14 @@ export const kr = {
     p8: '이것은, 천마리 종이학의 전설과 비슷하게, 모두가 함께 1000마리가 되도록 세계 각지의 헤이민들이 종이학을 접어서, 카나땅이 어서 빨리 건강해지기를 비는 것입니다! 업로드 된것은 이쪽의 해쉬태그에서 감상할수있어요!',
     pKR: '＊Halo란, 원광 혹은 후광이라는 의미이지만, 천사의 링이라는 의미도 있습니다. 즉, Hello와 Halo의 발음이 같은걸 이용한 제목입니다!'
 }
+
+export const ph = {
+    p1: 'Hei!',
+    p2: 'Una sa lahat, Maligayang Kaarawan Kanatan!',
+    p3: 'Nitong mga nakaraan na araw, kaming mga heimin na taga-iba’t-ibang bansa ay naghahanda ng proyekto para sa kaarawan ni Kanata, at tawag dito ay Halo World Project!',
+    p4: 'Sa proyekto na ito, layon naming mga Heimin na mula sa iba’t-ibang panig ng mundo na ipakita kung gaano naming kamahal si Kanata sa pamamagitan ng pagkuha ng litrato/larawan kung saan kami nakatira kasama ang merch ni Kanata! Kada post ay may kasama ring mensahe para kay Kanata, para maipakita namin ang pagpapasalamat namin kahit saan man kami nakatira!',
+    p5: 'At gusto naming pagpasalamatan ang lahat ng mga Heimin na lumahok sa proyekto! Salaman sa inyong lahat, nakakuha kami ng XXX para kay Kanata mula sa YYY na mga bansa sa buong mundo!',
+    p6: 'Sabay sa proyekto na iyon',
+    p7: 'may collaboration campaign din kami kasama ang MASS!',
+    p8: 'Dito, ang mga iba’t-ibang Heimin mula sa buong mundo ay nagtupi ng mga paper cranes para makaabot tayo ng 1000 para matulungan si Kanata na gumaling agad! Makikita lahat ng mga submission dito!'
+}

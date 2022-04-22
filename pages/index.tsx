@@ -8,7 +8,7 @@ import Card from '../components/Card'
 import { Crane } from '../components/Crane'
 
 import { response } from '../helper/data'
-import { en, jp, zh_TW, zh_CN, kr } from '../helper/lang'
+import { en, jp, zh_TW, zh_CN, kr, ph } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -30,6 +30,7 @@ export default function Home() {
       case 'zh-TW': return zh_TW
       case 'zh-CN': return zh_CN
       case 'ko': return kr
+      case 'fil': return ph
       default: return en
     }
   })();
@@ -82,6 +83,9 @@ export default function Home() {
           </option>
           <option className="text-white" value="ko">
             KR
+          </option>
+          <option className="text-white" value="fil">
+            PH
           </option>
         </select>
       </div>
