@@ -25,12 +25,14 @@ export default function Home() {
   const router = useRouter()
   const { locale } = router
   const t = (() => {
-    if (locale === 'ja') return jp;
-    else if (locale === 'zh-TW') return zh_TW;
-    else if (locale === 'zh-CN') return zh_CN;
-    else if (locale === 'ko') return kr;
-    else if (locale === 'fil') return ph;
-    return en;
+    switch (locale) {
+      case 'ja': return jp
+      case 'zh-TW': return zh_TW
+      case 'zh-CN': return zh_CN
+      case 'ko': return kr
+      case 'fil': return ph
+      default: return en
+    }
   })();
   const isJP = locale === 'ja'
   const isKR = locale === 'ko'
@@ -112,8 +114,10 @@ export default function Home() {
                     ).toString()
                   )}
               </p>
-              {isJP && <p className="mt-4">{(t as any).pJP}</p>}
-              {isKR && <p className="mt-4">{(t as any).pKR}</p>}
+              <div>
+                {isJP && <p className="mt-4">{(t as any).pJP}</p>}
+                {isKR && <p className="mt-4">{(t as any).pKR}</p>}
+              </div>
             </p>
           </div>
         </div>
