@@ -65,3 +65,14 @@ export const ph = {
     p7: 'may collaboration campaign din kami kasama ang MASS!',
     p8: 'Dito, ang mga iba’t-ibang Heimin mula sa buong mundo ay nagtupi ng mga paper cranes para makaabot tayo ng 1000 para matulungan si Kanata na gumaling agad! Makikita lahat ng mga submission dito!'
 }
+
+export const vi = {
+    p1: 'Hei!',
+    p2: 'Điều đầu tiên, Chúc mừng sinh nhật Kanatan!',
+    p3: 'Thời gian gần đây, các Heimin ở khắp nơi trên thế giới đã cùng nhau thực hiện dự án cho sinh nhật của Kanatan, đó chính là Dự án Halo World!',
+    p4: 'Với dự án này, chúng mình mong muốn hướng đến việc thấy được có bao nhiêu Heimin ở khắp mọi nơi trên thế giới bằng cách gửi hình ảnh khu vực họ đang sống cùng merch của Kanatan! Mỗi bài đăng cũng sẽ kèm theo lời nhắn gửi đến Kanatan, nhờ đó sẽ thể hiện được tất cả chúng ta đều yêu quý Tenshi, bất kể ở nơi đâu!',
+    p5: 'Và chúng mình cám ơn tất cả những Heimin đã tham gia dự án này! Cám ơn các bạn đã giúp chúng mình nhận được XXX thông điệp sinh nhật cho Kanatan từ hơn YYY quốc gia khắp thế giới!',
+    p6: 'Song song với dự án này,',
+    p7: 'chúng mình cũng đang hợp tác cùng chiến dịch của MASS! ',
+    p8: 'Với chiến dịch này, Heimin ở mọi nơi sẽ cùng nhau gấp để đạt được số lượng 1000 hạc giấy, mong ước may mắn và sức khỏe cho Kanatan! Bạn có thể xem tất cả những bài đóng góp từ hastag'
+}

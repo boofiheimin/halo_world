@@ -8,7 +8,7 @@ import Card from '../components/Card'
 import { Crane } from '../components/Crane'
 
 import { response } from '../helper/data'
-import { en, jp, zh_TW, zh_CN, kr, ph } from '../helper/lang'
+import { en, jp, zh_TW, zh_CN, kr, ph, vi } from '../helper/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Head from 'next/head'
@@ -37,6 +37,8 @@ export default function Home() {
         return kr
       case 'fil':
         return ph
+      case 'vi':
+        return vi
       default:
         return en
     }
