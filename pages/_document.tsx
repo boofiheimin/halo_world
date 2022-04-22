@@ -32,7 +32,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://halo-world.vercel.app" />
           <meta
             property="og:description"
-            content="Tenkai Academy Discord's Amane Kanata 1 Million Subscribers Project"
+            content="Tenkai Academy Discord's Amane Kanata 2022 Birthday Project"
           />
           <meta property="og:locale" content="en_US" />
           <meta property="og:locale:alternate" content="ja_JP" />
