@@ -101,11 +101,11 @@ export default function Home() {
           <option className="text-white" value="fil">
             PH
           </option>
-          <option className="text-white" value="id">
-            ID
-          </option>
           <option className="text-white" value="vi">
             VN
+          </option>
+          <option className="text-white" value="id">
+            ID
           </option>
         </select>
       </div>
