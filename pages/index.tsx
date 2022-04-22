@@ -26,14 +26,20 @@ export default function Home() {
   const { locale } = router
   const t = (() => {
     switch (locale) {
-      case 'ja': return jp
-      case 'zh-TW': return zh_TW
-      case 'zh-CN': return zh_CN
-      case 'ko': return kr
-      case 'fil': return ph
-      default: return en
+      case 'ja':
+        return jp
+      case 'zh-TW':
+        return zh_TW
+      case 'zh-CN':
+        return zh_CN
+      case 'ko':
+        return kr
+      case 'fil':
+        return ph
+      default:
+        return en
     }
-  })();
+  })()
   const isJP = locale === 'ja'
   const isKR = locale === 'ko'
   const changeLanguage = (e: any) => {
@@ -140,24 +146,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-full w-full justify-center">
-        <InfiniteScroll
-          dataLength={items.length}
-          next={fetchMore}
-          hasMore={currentIndex < response.length}
-          loader={<div>loading...</div>}
+      <InfiniteScroll
+        style={{
+          padding: '1rem',
+        }}
+        dataLength={items.length}
+        next={fetchMore}
+        hasMore={currentIndex < response.length}
+        loader={<div>loading...</div>}
+      >
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
         >
-          <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="masonry-grid"
-            columnClassName="masonry-grid_column"
-          >
-            {items.map((response, i) => (
-              <Card response={response} key={`${i}_${response.name}`} />
-            ))}
-          </Masonry>
-        </InfiniteScroll>
-      </div>
+          {items.map((response, i) => (
+            <Card response={response} key={`${i}_${response.name}`} />
+          ))}
+        </Masonry>
+      </InfiniteScroll>
     </div>
   )
 }

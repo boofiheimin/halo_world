@@ -45,6 +45,7 @@ const Card = ({ response }: { response: Response }) => {
             }}
           >
             <Image
+              className='image_border'
               layout="fill"
               objectFit="contain"
               src={imgSrc}
@@ -52,7 +53,7 @@ const Card = ({ response }: { response: Response }) => {
               onLoad={({ target }) => {
                 const { naturalWidth, naturalHeight } =
                   target as HTMLImageElement
-                setImageHeight(IMG_WIDTH/(naturalWidth/naturalHeight))
+                setImageHeight(IMG_WIDTH / (naturalWidth / naturalHeight))
               }}
             />
           </div>
