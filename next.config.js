@@ -12,7 +12,7 @@ module.exports = {
       domains: ['drive.google.com']
   },
   i18n: {
-    locales: ['en', 'ja'],
+    locales: ['en', 'ja', 'zh-TW'],
     defaultLocale: 'en'
   },
   reactStrictMode: true,
