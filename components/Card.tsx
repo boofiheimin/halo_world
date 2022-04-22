@@ -1,5 +1,6 @@
 import Flag from 'react-world-flags'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const IMG_WIDTH = 300
 
@@ -18,22 +19,33 @@ const Card = ({ response }: { response: Response }) => {
     <motion.div
       whileHover={{ scale: 1.05 }}
       className="box relative min-h-0 rounded-md bg-gray-800 bg-opacity-50"
-      style={{ width: IMG_WIDTH }}
     >
-      {countryCode && (
-        <div
-          className="absolute right-1 top-1 z-10 drop-shadow-md"
-          style={{ width: IMG_WIDTH * 0.15 }}
-        >
-          <Flag code={countryCode}></Flag>
-        </div>
-      )}
-      {imgSrc ? (
-        <img src={imgSrc} alt="test-pic" />
-      ) : (
-        <div className="flag_placeholder" />
-      )}
-      <div className="">
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        {countryCode && (
+          <div
+            className="absolute right-1 top-1 z-10 drop-shadow-md"
+            style={{ width: IMG_WIDTH * 0.15 }}
+          >
+            <Flag code={countryCode}></Flag>
+          </div>
+        )}
+        {imgSrc ? (
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            src={imgSrc}
+            width="100%"
+            height="100%"
+            alt={`${name}'s picture`}
+          />
+        ) : (
+          <div className="flag_placeholder" />
+        )}
         <div className="p-2 text-right" style={{ width: IMG_WIDTH }}>
           <div className="text-white">{message}</div>
           <div className="italic text-white">{`- ${name}`}</div>

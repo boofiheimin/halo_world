@@ -9,7 +9,7 @@ module.exports = {
     return config;
   },
   images: {
-      domains: ['drive.google.com']
+      domains: ['drive.google.com', 'lh3.googleusercontent.com']
   },
   i18n: {
     locales: ['en', 'ja', 'zh-TW'],
