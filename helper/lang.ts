@@ -76,3 +76,14 @@ export const vi = {
     p7: 'chúng mình cũng đang hợp tác cùng chiến dịch của MASS! ',
     p8: 'Với chiến dịch này, Heimin ở mọi nơi sẽ cùng nhau gấp để đạt được số lượng 1000 hạc giấy, mong ước may mắn và sức khỏe cho Kanatan! Bạn có thể xem tất cả những bài đóng góp từ hastag'
 }
+
+export const id = {
+    p1: 'Hei!',
+    p2: 'Pertama-tama, Selamat Ulang Tahun Kanatan!',
+    p3: "1 bulan ke belakang, heimin dari berbagai negara sedang membuat proyek untuk ulang tahunmu, yang kita sebut sebagai proyek “Halo World”",
+    p4: "Dengan proyek ini, kami ingin menunjukkan seberapa banyak heimin dari berbagai penjuru dunia cinta kami kepada Kanata dengan mengirim sebuah foto yang merepresentasikan dimana kami tinggal bersama dengan sebuah Kanata merchandise. Setiap pos juga memiliki pesan ulang tahun untuk Kanata supaya kami bisa menunjukkan seberapa besar apresiasi kamu dimanapun kami berada!",
+    p5: "Dan kami juga ingin berterima kasih kepada semua heimin yang telah berpartisipasi, kami mendapatkan total sebanyak XXX pesan ulang tahun untuk Kanata dari YYY negara berbeda di seluruh dunia!",
+    p6: "Bersama dengan proyek tersebut, ",
+    p7: "kami juga melakukan kampanye kolaborasi dengan MASS!",
+    p8: "Dengan ini, heimin dari berbagai negara membuat 1000 bangau kertas bersama-sama dengan harapan akan membantu Kanata agar lekas sembuh. Berbagai bangau kertas tersebut bisa dilihat disini!"
+}
