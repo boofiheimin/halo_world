@@ -1,7 +1,8 @@
 import Masonry from 'react-masonry-css'
-import { divide, groupBy } from 'lodash'
+import { groupBy, max } from 'lodash'
 import ScrollToTop from 'react-scroll-to-top'
 import { BiUpArrow } from 'react-icons/bi'
+import InfiniteScroll from 'react-infinite-scroll-component'
 
 import Card from '../components/Card'
 import { Crane } from '../components/Crane'
@@ -10,6 +11,7 @@ import { response } from '../helper/data'
 import { en } from '../helper/lang'
 import { jp } from '../helper/lang'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 const breakpointColumnsObj = {
   default: 4,
@@ -17,6 +19,8 @@ const breakpointColumnsObj = {
   1000: 2,
   700: 1,
 }
+
+const OFFSET = 25
 
 export default function Home() {
   const router = useRouter()
@@ -27,6 +31,14 @@ export default function Home() {
     const locale = e.target.value
     router.push(router.pathname, router.asPath, { locale })
   }
+  const [currentIndex, setCurrentIndex] = useState(OFFSET)
+  const [items, setItems] = useState(response.slice(0, OFFSET))
+  const fetchMore = () => {
+    const nextIndex = max([currentIndex + OFFSET, response.length]) || 0
+    setItems([...items, ...response.slice(currentIndex, nextIndex)])
+    setCurrentIndex(nextIndex)
+  }
+
   return (
     <div className="relative flex flex-col items-center p-2 pt-10">
       <ScrollToTop
@@ -107,15 +119,22 @@ export default function Home() {
         </div>
       </div>
       <div className="flex h-full w-full justify-center">
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="masonry-grid"
-          columnClassName="masonry-grid_column"
+        <InfiniteScroll
+          dataLength={items.length}
+          next={fetchMore}
+          hasMore={currentIndex < response.length}
+          loader={<div>loading...</div>}
         >
-          {response.map((response, i) => (
-            <Card response={response} key={`${i}_${response.name}`} />
-          ))}
-        </Masonry>
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="masonry-grid"
+            columnClassName="masonry-grid_column"
+          >
+            {items.map((response, i) => (
+              <Card response={response} key={`${i}_${response.name}`} />
+            ))}
+          </Masonry>
+        </InfiniteScroll>
       </div>
     </div>
   )
